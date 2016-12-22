@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  background-image: url(../assets/modern-css-layouts.png);
+  background-size: contain;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display:flex;
+}
+
+.block {
+  display: block;
+}
+
+.container-main-link {
+  height: 40%;
+  height: 40vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+.main-link {
+  color: #fff;
+  padding: 1.5em 1em;
+  height: 4em;
+}
+
+.preview {
+  background-color: #16a085;
+}
+
+.preorder {
+  background-color: #c0392b;
+}
+
+@media screen and (max-width: 480px) {
+  .container-main-link {
+    flex-direction: column;
+  }
+}
