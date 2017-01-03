@@ -8,6 +8,7 @@ body {
   font-family: Lato, sans-serif;
   font-size: 0.9em;
   background-color: #e8e8e9;
+  color: rgba(0,0,0,0.6);
 }
 
 .container {
@@ -31,8 +32,12 @@ body {
   background-color: #8cacea;
   border: 0;
   padding: 1rem 3rem;
-  font-size: 1.6em;
+  font-size: 1.2em;
   color: rgba(0,0,0,0.8)
+}
+
+.container img {
+    margin-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 769px) {
