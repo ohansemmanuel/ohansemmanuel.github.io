@@ -9,15 +9,91 @@ body {
 
 body {
   background-color: #fff;
-  background-image: url(../assets/modern-css-layouts.png);
-  background-size: contain;
   font-size: 1em;
-  letter-spacing: 2px;
+  margin: 0;
+	font-family: Lato, sans-serif;
+  font-weight: 300;
+	color: #222;
+	font-size: 1em;
+}
+
+header {
+  flex: 0 0 280px;
+	display: flex;
+	padding: 40px;
+	background-color: #e8e8e9;
+  margin-bottom: 5em;
+}
+
+ul {
+  padding: 0 5em;
+  list-style: none;
+}
+
+
+footer {
+  display: flex;
 }
 
 a {
   text-decoration: none;
 }
+
+/*
+==============================================
+HEADER SIBLINGS
+===============================================
+*/
+section.details {
+  flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	font-weight: 300;
+	padding-left: 50px;
+}
+
+.details div:nth-child(1){
+	margin-bottom: auto;
+}
+
+.details div:nth-child(2){
+	margin-top: 0;
+}
+
+.details div:nth-child(2) i.fa{
+	font-size: 0.9em;
+	padding: 0 0.7em;
+	font-weight: 300;
+}
+
+.details div:nth-child(1) p:first-child{
+	font-size: 1.8em;
+	margin: 0 0 10px;
+}
+
+.details div:nth-child(1) p:not(:first-child){
+	font-size: 0.9em;
+	margin: 2px 0;
+}
+/*
+=============================================
+HEADER TAGS
+=============================================
+*/
+article.talking h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    margin: 3em 0 0.2em;
+}
+
+article.talking h2+h4 {
+    font-weight: 400;
+    margin-top: 0;
+    text-transform: capitalize;
+    color: rgba(0,0,0,0.5);
+}
+
+/**/
 
 .flex {
   display:flex;
@@ -27,19 +103,18 @@ a {
   display: block;
 }
 
-.container-main-link {
-  height: 40%;
-  height: 40vh;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(0,0,0,0.5);
-
-}
 
 .main-link {
   color: #fff;
   padding: 1.5em 1em;
-  height: 4em;
+  min-height: 4em;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 4rem;
+}
+
+section.talk {
+  padding: 0 20em;
 }
 
 .preview {
@@ -50,8 +125,76 @@ a {
   background-color: #c0392b;
 }
 
-@media screen and (max-width: 480px) {
-  .container-main-link {
-    flex-direction: column;
+/*
+===============================================================
+  CHAT
+===============================================================
+*/
+
+ul.chat {
+  margin: 0;
+  padding: 0;
+}
+
+.chat li {
+  padding: 1em 15em;
+}
+
+li.you {
+  background-color: rgb(174, 168, 211);
+}
+
+
+/*================================================
+  MOBILE RESPONSIVENESS
+===================================================*/
+@media screen and (min-width: 770px) and (max-width: 850px) {
+
+  section.talk {
+    padding: 0 5em;
   }
+}
+
+@media screen and (max-width: 769px) {
+
+	.sm-hide {
+		display:none;
+	}
+
+	.sm-text-center {
+		text-align: center;
+	}
+
+	.sm-text-right {
+		text-align: right;
+	}
+
+  section.talk {
+    padding: 0 1em;
+  }
+
+  .chat li {
+    padding: 1em 1em;
+  }
+
+	header {
+		flex: 0 0 auto; /*auto compute height*/
+		display: flex;
+		flex-direction: column; /*stack image and music details vertically*/
+		align-items: center; /*center items. left-to-right*/
+		padding: 40px 0;
+		background-color: #e8e9e9;
+	}
+
+	section.details{
+		padding: 0; /*remove the spacing.*/
+	}
+
+
+	/*album details*/
+	section.details div:nth-child(1) p:first-child{
+		margin: 20px 0;
+		font-size: 1em;
+	}
+
 }

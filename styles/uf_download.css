@@ -33,9 +33,14 @@ body {
   border: 0;
   padding: 1rem 3rem;
   font-size: 1.2em;
-  color: rgba(0,0,0,0.8)
+  color: rgba(0,0,0,0.8);
+  cursor: pointer;
 }
 
+.container button a {
+  text-decoration: none;
+  color: inherit;
+}
 .container img {
     margin-bottom: 2.5rem;
 }
