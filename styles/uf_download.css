@@ -27,20 +27,17 @@ body {
     line-height: 1.8rem;
 }
 
-.container button {
+.container a {
   font-weight: 400;
   background-color: #8cacea;
   border: 0;
   padding: 1rem 3rem;
   font-size: 1.2em;
+  text-decoration: none;
   color: rgba(0,0,0,0.8);
   cursor: pointer;
 }
 
-.container button a {
-  text-decoration: none;
-  color: inherit;
-}
 .container img {
     margin-bottom: 2.5rem;
 }
