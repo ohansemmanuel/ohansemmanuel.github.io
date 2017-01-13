@@ -9,6 +9,7 @@ body {
   font-size: 0.9em;
   background-color: #e8e8e9;
   color: rgba(0,0,0,0.6);
+  margin: 0;
 }
 
 .container {
@@ -39,6 +40,7 @@ body {
 }
 
 .container img {
+    max-width: 100%;
     margin-bottom: 2.5rem;
 }
 
